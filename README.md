@@ -5,3 +5,5 @@ a group of helper classes for unity google cardboard VR sdk to enable:
 3. interaction with objects
 4. Gaze based circular progress
 
+It needs first to follow Google Carboard here: https://developers.google.com/cardboard/develop/unity/quickstart 
+then add those scripts
