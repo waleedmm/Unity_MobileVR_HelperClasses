@@ -1,0 +1,7 @@
+# Unity_MobileVR_HelperClasses
+a group of helper classes for unity google cardboard VR sdk to enable:
+1. teleportation
+2. interaction with UI
+3. interaction with objects
+4. Gaze based circular progress
+
