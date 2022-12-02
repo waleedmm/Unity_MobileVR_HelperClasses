@@ -8,14 +8,14 @@ a group of helper classes for unity google cardboard VR sdk to enable:
 It needs first to follow Google Carboard here: https://developers.google.com/cardboard/develop/unity/quickstart 
 then add those scripts
 
-# Mobile Controls
+# Example Mobile Controls
 The mobile application is gaze based, so it depends on head rotation and eye looking duration.
 1. camera rotation: is done by rotating head
-2. Movement (Walking): it’s teleportation based. So, you can move by looking 2 seconds into one of the green boxes on the ground. When the yellow circle completes the teleportation is executed and position changes.
+2. Movement (Walking): it’s teleportation based. So, you can move by looking a number of seconds (controlled by settings) into one of the green boxes on the ground. When the yellow circle completes the teleportation is executed and position changes.
 
 ![moving](/move.PNG)
 
-3. Using items and UI buttons: if item is usable, then by looking at it a blue panel appears, and if looking time is 2 seconds, then a yellow circle is completed and the item is used. 
+3. Using items and UI buttons: if item is usable, then by looking at it a blue panel appears, then a yellow circle is completed and the item is used. 
 
 ![using](/use-1.PNG)
 ![using](/ui.PNG)
