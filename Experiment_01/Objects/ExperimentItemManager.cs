@@ -7,7 +7,7 @@ public class ExperimentItemManager : MonoBehaviour, IGazeSelectable
 {
     public Animator m_Animator;
     public string m_AnimationName ="" ;
-    private Outline m_OutlineComponent;
+    
     public GameObject m_PopupMenu;
     public CircularProgressManager m_CircularManager;
     public SingleQuest m_TargetQuest;
@@ -15,9 +15,7 @@ public class ExperimentItemManager : MonoBehaviour, IGazeSelectable
 
     public void OnGazeProgressCompleted()
     {
-        //throw new System.NotImplementedException();
-        if(m_OutlineComponent!=null)
-            m_OutlineComponent.enabled = false;
+      
         m_PopupMenu.SetActive(false);
         if (m_TargetQuest != null)
         {
@@ -61,7 +59,7 @@ public class ExperimentItemManager : MonoBehaviour, IGazeSelectable
     {
         if (m_Animator != null)
         {
-            m_OutlineComponent = m_Animator.gameObject.GetComponent<Outline>();
+          
             m_EndAnimationTrigger = m_Animator.gameObject.GetComponent<AnimationEndTriggerUnit>();
             if (m_EndAnimationTrigger == null)
             {
